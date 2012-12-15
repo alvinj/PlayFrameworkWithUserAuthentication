@@ -1,0 +1,30 @@
+@(user: User)(body: Html)
+
+<html>
+  <head>
+    <title>Application Name Here</title>
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+  </head>
+
+  <body>
+    <header>
+      <dl id="user">
+        <dt>@user.name <span>(@user.email)</span></dt>
+        <dd>
+          <a href="@routes.Application.logout()">Logout</a>
+        </dd>
+      </dl>
+    </header>
+
+    <nav>
+      <!-- tbd -->
+    </nav>
+
+    <section id="main">
+      @body
+    </section>
+  </body>
+
+</html>
+

@@ -1,0 +1,24 @@
+@(user: User)
+
+@* this is a main 'dashboard', or landing page, for your application. *@
+
+@main(user){
+
+    <header>
+      <hgroup>
+        <h1>Dashboard</h1>
+      </hgroup>
+    </header>
+
+    <p>Welcome, @user.name</p>
+    
+    <ul>
+     <li>URLs</li>
+     <li>To-Do</li>
+     <li>Sticky Notes</li>
+     <li>Stocks</li>
+     <li>Diary</li>
+    </ul>
+    
+}
+
